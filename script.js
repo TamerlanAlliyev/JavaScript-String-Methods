@@ -74,9 +74,8 @@ const books = [
 
 console.log("-------------------------// 5. Books array-ini əlifba sırasına uyğun yazılmış array-ə çevirmək---------------------------");
 
-const sortedBooks = books.sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
-console.log(sortedBooks);
-
+books.sort();
+console.log(books)
 console.log("------------------------  // 6. Books array-ində adi ən uzun olan kitabı tapmaq.----------------------------");
 
 const longestBook = books.reduce((longest, current) => (current.length > longest.length ? current : longest), '');
